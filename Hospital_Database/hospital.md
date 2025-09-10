@@ -20,7 +20,6 @@ We are building an information system for a **hospital** to manage:
 - **Relationship:**  
   - One **Address** → Many **Patients**  
   - Each **Patient** → One **Address**  
-- **Cardinality:**  
 
 
 ---
@@ -30,7 +29,6 @@ We are building an information system for a **hospital** to manage:
 - **Relationship:**  
 - A **Patient** may or may not have a drop record.  
 - Each **Dropped_Patient** → Exactly one **Patient**.  
-- **Cardinality:**  
 
 
 
@@ -41,7 +39,6 @@ We are building an information system for a **hospital** to manage:
 - **Relationship:**  
 - One **Patient** → Many **Patient_Visits**  
 - Each **Patient_Visit** → One **Patient**  
-- **Cardinality:**  
 
 
 
@@ -51,8 +48,7 @@ We are building an information system for a **hospital** to manage:
 - **Business Rule:** Each visit is conducted by one doctor. A doctor may attend many visits over time.  
 - **Relationship:**  
 - One **Doctor** → Many **Patient_Visits**  
-- Each **Patient_Visit** → One **Doctor**  
-- **Cardinality:**  
+- Each **Patient_Visit** → One **Doctor**   
 
 
 
@@ -63,8 +59,7 @@ We are building an information system for a **hospital** to manage:
 - **Business Rule:** During a visit, a patient may report multiple symptoms. Each symptom record belongs to that specific visit.  
 - **Relationship:**  
 - One **Patient_Visit** → Many **Symptoms**  
-- Each **Symptom** → One **Patient_Visit**  
-- **Cardinality:**  
+- Each **Symptom** → One **Patient_Visit**    
 
 
 
@@ -72,7 +67,6 @@ We are building an information system for a **hospital** to manage:
 ---
 
 ## Analyst’s Narrative
-*"As part of understanding your hospital’s workflow, we mapped out the following:"*
 
 - Each **Patient** must provide an **Address**, but multiple patients may share one address (families, group homes).  
 - Patients may continue using hospital services indefinitely. If a patient stops, we record a **Dropped_Patient** entry. Since a patient can only leave once, this is a **one-to-one optional** relationship.  
