@@ -22,7 +22,7 @@ The hospital system case models how to manage:
 - Tracking patients who have left the hospital  
 
 It includes business rules, relationship cardinalities, and an analyst narrative.  
-Details are available in: [Hospital_Database/hospital.md](Hospital_Database/hospital.md)  
+Details are available in: [Hospital_Data_Models/hospital.md](Hospital_Data_Models/hospital.md)  
 
 ---
 
